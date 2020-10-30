@@ -18,7 +18,7 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Work Day Scheduler</title>
   </head>
 
@@ -31,8 +31,16 @@
     <div class="container">
       <!-- Timeblocks go here -->
     </div>
+    <div class="card shadow-sm mb-2">
+      <div class="row justify-content" id="9am">
+        <p id="time" class="text-body col-1">9 AM </p>
+          <input type="text" id="9" class="col-10">
+        <button class="rowBtn btn-primary col-1">Save</button>
+      </div>
+  
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>

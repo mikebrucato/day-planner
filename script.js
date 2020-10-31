@@ -1,11 +1,11 @@
 // date variables and time of day array
 
-var date = moment().format("MMMM do YYYY")
-
+var date = moment().format("MMMM DD YYYY")
+console.log(date)
 $("#currentDay").append(date)
 
 
-// function that updates the 
+// function that updates the background color according to the time of day
 var timeOfDay = ["9", "10", "11", "12", "13", "14", "15", "16", "17"]
 
 updateTime();

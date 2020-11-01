@@ -28,3 +28,12 @@ function updateTime() {
                 $("#" + timeOfDay[i]).attr("style", "background-color: #fc665e")
             }
 }
+
+// save button function that saves the user's input in the time of day fields
+$(".rowBtn").on("click", function() {
+    var timeOfday = $(this).parent().attr("id");
+    var textContent = $("input").val().trim();
+
+    localStorage.setItem(timeOfday, textContent);
+    
+});

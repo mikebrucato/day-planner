@@ -37,3 +37,6 @@ $(".rowBtn").on("click", function() {
     localStorage.setItem(timeOfday, textContent);
     
 });
+
+// setting the user input and saving it to local storage
+$("#9am").children("input").val(localStorage.getItem("9am"));
